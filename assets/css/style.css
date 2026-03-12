@@ -1,0 +1,49 @@
+/* Custom Font Import (Example) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* 
+  Tailwind handles most styles, but use this file for:
+  1. Complex animations not easily done with utility classes
+  2. Third-party library overrides
+  3. Custom scrollbar styling
+*/
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #262626; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #404040; 
+}
+
+/* Fix for Select Options in Dark Mode */
+select option {
+    background-color: #171717; /* Matches bg-brand-card */
+    color: #e2e8f0; /* Matches text-slate-200 */
+}
+
+/* Site Background Pattern */
+.site-bg {
+    background-color: #050505;
+    background-image: 
+        radial-gradient(circle at 50% 0%, #1a1a1a, transparent 80%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 60px 60px, 60px 60px;
+    background-attachment: fixed;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}

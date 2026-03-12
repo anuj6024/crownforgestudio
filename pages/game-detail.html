@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neon Nexus - Cyberpunk Action RPG">
+    <title>War-X - CrownForge Games</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            accent: '#facc15',
+                            muted: '#9ca3af',
+                            card: '#171717',
+                            neon: '#ef4444' 
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1))",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="site-bg text-slate-200 antialiased min-h-screen flex flex-col font-sans selection:bg-brand-neon selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-3">
+                <img src="../assets/images/logos/CFS_Black_logo.png" alt="CrownForge" class="h-12 w-auto">
+                <span class="text-xl font-black tracking-tight">
+                    <span class="text-brand-accent">CROWN</span><span class="text-white">FORGE</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wide">
+                <a href="games.html" class="text-white hover:text-brand-accent transition-colors">Games</a>
+                <a href="about.html" class="text-slate-400 hover:text-brand-accent transition-colors">Studio</a>
+                <a href="../index.html#careers" class="text-slate-400 hover:text-brand-accent transition-colors">Careers</a>
+                <a href="../index.html#contact" class="text-slate-400 hover:text-brand-accent transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:inline-block px-5 py-2 text-xs font-bold text-brand-dark bg-white hover:bg-brand-accent transition-colors rounded-sm uppercase tracking-widest">
+                    Install
+                </a>
+                <button class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+        <!-- Cinematic Hero Section -->
+        <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+            <!-- Background Visual -->
+            <div class="absolute inset-0 z-0 bg-black">
+                <img src="../assets/images/games/war-x/war_x_image_1.png" alt="War-X Background" class="w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 bg-gradient-to-br from-zinc-900/50 to-black/50 mix-blend-overlay"></div>
+                <!-- Simulated Grid effect -->
+                <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 30px 30px;"></div>
+            </div>
+            
+            <!-- Overlay Gradient -->
+            <div class="absolute inset-0 z-10 bg-hero-pattern"></div>
+
+            <!-- Content -->
+            <div class="relative z-20 container mx-auto px-6 pt-20 flex flex-col items-center text-center">
+                <!-- Game Logo / Title -->
+                <img src="../assets/images/logos/game_War-X_logo.png" alt="War-X" class="w-64 md:w-96 mb-6 drop-shadow-2xl hover:scale-105 transition-transform duration-700">
+                
+                <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                    Total Warfare. <span class="text-brand-neon font-semibold">Zero Compromise.</span> Dominate the battlefield.
+                </p>
+
+                <!-- Primary CTAs -->
+                <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full md:w-auto">
+                    <a href="https://www.youtube.com/watch?v=QJ98fh05ZNs" target="_blank" class="w-full md:w-auto px-8 py-4 bg-brand-neon text-white font-bold text-lg rounded hover:bg-red-600 hover:shadow-[0_0_20px_rgba(239,68,68,0.5)] transition-all duration-300 uppercase tracking-wider flex items-center justify-center gap-2">
+                        <span>Watch Trailer</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </a>
+                    <a href="#" class="w-full md:w-auto px-8 py-4 border border-white/30 bg-white/5 backdrop-blur-sm text-white font-bold text-lg rounded hover:bg-white/10 hover:border-white/60 transition-all duration-300 uppercase tracking-wider flex items-center justify-center gap-2">
+                        <span>Buy Now</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-10 animate-bounce text-slate-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Info Strip -->
+        <div class="bg-brand-card border-y border-white/5">
+            <div class="container mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <span class="block text-brand-muted text-xs uppercase tracking-widest mb-1">Release Date</span>
+                    <span class="block text-white font-bold text-lg">Available Now</span>
+                </div>
+                <div>
+                    <span class="block text-brand-muted text-xs uppercase tracking-widest mb-1">Genre</span>
+                    <span class="block text-white font-bold text-lg">Tactical Shooter / Action</span>
+                </div>
+                <div>
+                    <span class="block text-brand-muted text-xs uppercase tracking-widest mb-1">Developer</span>
+                    <span class="block text-white font-bold text-lg">CrownForge Studio</span>
+                </div>
+                <div>
+                    <span class="block text-brand-muted text-xs uppercase tracking-widest mb-1">Platform</span>
+                    <div class="flex items-center justify-center md:justify-start space-x-3 text-slate-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" title="Android"><path d="M8 3a1 1 0 012 0v1h4V3a1 1 0 112 0v1h1a2 2 0 012 2v9a2 2 0 01-2 2h-1v3a1 1 0 11-2 0v-3H10v3a1 1 0 11-2 0v-3H7a2 2 0 01-2-2V6a2 2 0 012-2h1V3zm-1 3v9h10V6H7z"/></svg>
+                        <span class="text-sm">Android</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <section class="py-24 bg-brand-dark relative">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-start gap-16">
+                    <!-- Feature Text -->
+                    <div class="w-full md:w-1/2 sticky top-24">
+                        <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white">COMMAND <span class="text-brand-neon">THE FRONTLINE</span></h2>
+                        <div class="space-y-8">
+                            <div class="group">
+                                <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                                    <span class="w-2 h-2 bg-brand-neon rounded-full group-hover:w-4 transition-all duration-300"></span>
+                                    Advanced Warfare
+                                </h3>
+                                <p class="text-slate-400 leading-relaxed pl-5 border-l border-white/10 group-hover:border-brand-neon/50 transition-colors">
+                                    Utilize cutting-edge weaponry and tactical gadgets. Coordinate with your squad to execute perfect strikes.
+                                </p>
+                            </div>
+                            <div class="group">
+                                <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                                    <span class="w-2 h-2 bg-brand-accent rounded-full group-hover:w-4 transition-all duration-300"></span>
+                                    Global Conflicts
+                                </h3>
+                                <p class="text-slate-400 leading-relaxed pl-5 border-l border-white/10 group-hover:border-brand-accent/50 transition-colors">
+                                    Deploy to diverse warzones around the globe. From urban centers to desolate wastelands, every map offers unique challenges.
+                                </p>
+                            </div>
+                            <div class="group">
+                                <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full group-hover:w-4 transition-all duration-300"></span>
+                                    Next-Gen Graphics
+                                </h3>
+                                <p class="text-slate-400 leading-relaxed pl-5 border-l border-white/10 group-hover:border-purple-500/50 transition-colors">
+                                    Powered by our proprietary engine, War-X delivers photorealistic visuals and immersive audio that puts you in the heat of battle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Image / Visual -->
+                    <div class="w-full md:w-1/2 relative">
+                        <div class="aspect-[4/5] rounded-lg overflow-hidden relative shadow-2xl shadow-brand-neon/10 border border-white/10">
+                            <!-- Placeholder -->
+                            <img src="../assets/images/games/war-x/war_x_image_2.png" alt="War-X Gameplay" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+                            
+                            <div class="absolute bottom-8 left-8 z-20">
+                                <p class="text-brand-neon font-mono text-sm mb-2">Operation: Red Storm</p>
+                                <p class="text-white font-bold text-2xl">Tactical Superiority</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Gallery -->
+        <section class="py-24 bg-brand-card">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-2">Media Gallery</h2>
+                        <p class="text-brand-muted">Screenshots and concept art from the latest build.</p>
+                    </div>
+                    <button 
+                        class="text-brand-accent hover:text-white transition-colors text-sm font-bold uppercase tracking-wider"
+                        data-gallery-open
+                        data-gallery-title="War-X Media"
+                        data-video="QJ98fh05ZNs"
+                        data-images="../assets/images/games/war-x/war_x_image_1.png,../assets/images/games/war-x/war_x_image_2.png,../assets/images/games/war-x/war_x_image_3.png,../assets/images/games/war-x/war_x_image_4.png,../assets/images/games/war-x/war_x_image_5.png"
+                    >View All Media &rarr;</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="lg:col-span-2 lg:row-span-2 relative aspect-video rounded-lg overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/QJ98fh05ZNs?si=w--qxPl4Yfj7yFi6&amp;controls=0" title="War-X Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="relative aspect-video rounded-lg overflow-hidden">
+                        <img src="../assets/images/games/war-x/war_x_image_2.png" alt="War-X Screenshot 1" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative aspect-video rounded-lg overflow-hidden">
+                        <img src="../assets/images/games/war-x/war_x_image_3.png" alt="War-X Screenshot 2" class="w-full h-full object-cover">
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Community -->
+        <section class="py-24 bg-gradient-to-b from-brand-dark to-black relative overflow-hidden">
+             <!-- Background decorative elements -->
+             <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-neon/50 to-transparent"></div>
+
+             <div class="container mx-auto px-6 text-center relative z-10">
+                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Join the Resistance</h2>
+                 <p class="text-brand-muted max-w-xl mx-auto mb-10">
+                     Sign up for exclusive development updates, beta access, and digital rewards.
+                 </p>
+                 
+                 <form class="max-w-md mx-auto flex gap-2">
+                     <input type="email" placeholder="Enter your email" class="flex-grow px-4 py-3 bg-white/5 border border-white/10 rounded focus:outline-none focus:border-brand-neon text-white placeholder-slate-500 transition-colors">
+                     <button type="button" class="px-6 py-3 bg-brand-neon text-white font-bold rounded hover:bg-pink-400 transition-colors">JOIN</button>
+                 </form>
+
+                 <div class="mt-12 flex justify-center gap-6">
+                     <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="sr-only">Discord</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+                     </a>
+                     <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="sr-only">Twitter</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                     </a>
+                     <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="sr-only">YouTube</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.498-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                     </a>
+                 </div>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-slate-900 py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-brand-muted">
+            <p>&copy; 2024 CrownForge Games. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="#" class="hover:text-white">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

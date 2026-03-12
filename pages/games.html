@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Games - CrownForge Games">
+    <title>Our Games - CrownForge Games</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            accent: '#facc15',
+                            muted: '#9ca3af',
+                            card: '#171717',
+                            neon: '#f472b6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="site-bg text-slate-200 antialiased min-h-screen flex flex-col">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="w-full px-6 md:px-10 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-3">
+                <img src="../assets/images/logos/CFS_Black_logo.png" alt="CrownForge" class="h-12 w-auto">
+                <span class="text-xl font-black tracking-tight">
+                    <span class="text-brand-accent">CROWN</span><span class="text-white">FORGE</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="games.html" class="text-brand-accent transition-colors">Games</a>
+                <a href="about.html" class="hover:text-brand-accent transition-colors">Studio</a>
+                <a href="news-updates.html" class="hover:text-brand-accent transition-colors">News</a>
+                <a href="careers.html" class="hover:text-brand-accent transition-colors">Careers</a>
+                <a href="contact-support.html" class="hover:text-brand-accent transition-colors">Contact</a>
+            </nav>
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-24 pb-12 px-6">
+        <div class="container mx-auto">
+            
+            <!-- Page Header -->
+            <div class="mb-12 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Our <span class="text-brand-accent">Games</span></h1>
+                <p class="text-brand-muted text-lg max-w-2xl">
+                    Dive into immersive worlds crafted with passion and cutting-edge technology.
+                </p>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: War-X -->
+                <article class="bg-brand-card rounded-xl overflow-hidden shadow-xl border border-slate-700 hover:border-brand-accent transition-all duration-300 group relative">
+                    <div class="h-48 relative overflow-hidden group bg-black">
+                        <img src="../assets/images/logos/game_War-X_logo.png" alt="War-X Logo" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-3 right-3">
+                            <span class="bg-green-500/20 text-green-400 border border-green-500/50 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                                Released
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">War-X</h3>
+                        <p class="text-brand-muted text-sm mb-4 line-clamp-3">
+                            Experience the ultimate tactical warfare. Engage in intense battles and dominate the battlefield.
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-auto">
+                            <div class="flex space-x-2 text-slate-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h10V4H7zm5 16a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                            </div>
+                            <a href="war-x.html" class="text-sm font-semibold text-brand-accent hover:text-white transition-colors before:absolute before:inset-0 focus:outline-none">Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: The Black Vaile -->
+                <article class="bg-brand-card rounded-xl overflow-hidden shadow-xl border border-slate-700 hover:border-brand-accent transition-all duration-300 group relative">
+                    <div class="h-48 relative overflow-hidden group bg-black">
+                        <img src="../assets/images/logos/game_The Black Vaile_logo.png" alt="The Black Vaile Logo" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-3 right-3">
+                             <span class="bg-green-500/20 text-green-400 border border-green-500/50 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                                Released
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">The Black Vaile</h3>
+                        <p class="text-brand-muted text-sm mb-4 line-clamp-3">
+                            Uncover the secrets hidden in the shadows. A psychological horror experience that will test your sanity.
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-auto">
+                            <div class="flex space-x-2 text-slate-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h10V4H7zm5 16a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                            </div>
+                            <a href="black-vaile.html" class="text-sm font-semibold text-brand-accent hover:text-white transition-colors before:absolute before:inset-0 focus:outline-none">Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3: Zombie Strikeforce -->
+                <article class="bg-brand-card rounded-xl overflow-hidden shadow-xl border border-slate-700 hover:border-brand-accent transition-all duration-300 group relative">
+                    <div class="h-48 relative overflow-hidden group bg-black">
+                        <img src="../assets/images/logos/game_Zombie Strikeforce_logo.png" alt="Zombie Strikeforce Logo" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute top-3 right-3">
+                            <span class="bg-green-500/20 text-green-400 border border-green-500/50 text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                                Released
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-accent transition-colors">Zombie Strikeforce</h3>
+                        <p class="text-brand-muted text-sm mb-4 line-clamp-3">
+                            Join the elite strikeforce and reclaim the world from the undead horde. Fast-paced action awaits.
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-auto">
+                            <div class="flex space-x-2 text-slate-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h10V4H7zm5 16a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                            </div>
+                            <a href="zombie-strikeforce.html" class="text-sm font-semibold text-brand-accent hover:text-white transition-colors before:absolute before:inset-0 focus:outline-none">Details &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-slate-800 py-12">
+        <div class="container mx-auto px-6 text-center text-brand-muted">
+            <p class="mb-4">&copy; 2026 CrownForge Games. All rights reserved.</p>
+            <div class="flex items-center justify-center gap-6 text-sm">
+                <a href="Privacy-Policy.html" class="hover:text-white">Privacy Policy</a>
+                <a href="TermsofService.html" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Adjusted path) -->
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

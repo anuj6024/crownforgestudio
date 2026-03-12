@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // News collection: public read, auth write
+    match /news/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    // Careers collection: public read, auth write
+    match /careers/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Applications collection: public create, auth read/update/delete
+    match /applications/{docId} {
+      allow create: if true;
+      allow read, update, delete: if request.auth != null;
+    }
+
+    // Messages collection: public create, auth read/update/delete
+    match /messages/{docId} {
+      allow create: if true;
+      allow read, update, delete: if request.auth != null;
+    }
+
+  }
+}

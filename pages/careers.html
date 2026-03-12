@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - CrownForge Games</title>
+    <meta name="description" content="Join CrownForge Games. View openings, culture, and how to apply.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            accent: '#facc15',
+                            muted: '#9ca3af',
+                            card: '#171717',
+                            neon: '#ef4444'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="site-bg text-slate-200 antialiased min-h-screen flex flex-col">
+
+    <header class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="w-full px-6 md:px-10 py-4 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-3">
+                <img src="../assets/images/logos/CFS_Black_logo.png" alt="CrownForge" class="h-12 w-auto">
+                <span class="text-xl font-black tracking-tight">
+                    <span class="text-brand-accent">CROWN</span><span class="text-white">FORGE</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="games.html" class="hover:text-brand-accent transition-colors">Games</a>
+                <a href="about.html" class="hover:text-brand-accent transition-colors">Studio</a>
+                <a href="news-updates.html" class="hover:text-brand-accent transition-colors">News</a>
+                <a href="#" class="text-brand-accent transition-colors">Careers</a>
+                <a href="contact-support.html" class="hover:text-brand-accent transition-colors">Contact</a>
+            </nav>
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24 pb-16">
+        <section class="container mx-auto px-6">
+            <div class="mb-10">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Careers at <span class="text-brand-accent">CrownForge</span></h1>
+                <p class="text-brand-muted mt-3 max-w-2xl">Help us forge next‑generation worlds. We value craftsmanship, curiosity, and player‑first design.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-brand-card border border-slate-800 rounded-xl p-6">
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-2xl font-bold text-white">Current Openings</h2>
+                            <span class="text-xs px-2 py-1 rounded-full bg-white/5 border border-white/10 text-slate-400">Updated Live</span>
+                        </div>
+                        <div id="cf-careers-list" class="mt-6 space-y-6"></div>
+                    </div>
+
+                    <div class="bg-brand-card border border-slate-800 rounded-xl p-6">
+                        <h2 class="text-2xl font-bold text-white">Role Descriptions</h2>
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-white/10 rounded-lg p-5">
+                                <h3 class="text-lg font-semibold text-white">What You’ll Do</h3>
+                                <ul class="mt-3 space-y-2 text-slate-400 text-sm">
+                                    <li>Collaborate cross‑discipline to ship high‑quality features.</li>
+                                    <li>Prototype quickly and iterate with data.</li>
+                                    <li>Own quality and performance within your domain.</li>
+                                </ul>
+                            </div>
+                            <div class="border border-white/10 rounded-lg p-5">
+                                <h3 class="text-lg font-semibold text-white">What We Value</h3>
+                                <ul class="mt-3 space-y-2 text-slate-400 text-sm">
+                                    <li>Player empathy and clarity of purpose.</li>
+                                    <li>Craftsmanship and maintainable systems.</li>
+                                    <li>Curiosity, kindness, and accountability.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="lg:col-span-1 space-y-8">
+                    <div class="bg-brand-card border border-slate-800 rounded-xl p-6">
+                        <h2 class="text-2xl font-bold text-white">Studio Culture</h2>
+                        <ul class="mt-4 space-y-3 text-slate-400">
+                            <li>Flexible work and healthy pace.</li>
+                            <li>Transparent roadmaps and open communication.</li>
+                            <li>Support for learning and conference budgets.</li>
+                            <li>Diverse, inclusive, and collaborative team.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-brand-card border border-slate-800 rounded-xl p-6">
+                        <h2 class="text-2xl font-bold text-white">How to Apply</h2>
+                        <ol class="mt-4 space-y-3 text-slate-400">
+                            <li>Send CV and portfolio or code samples.</li>
+                            <li>Include role, availability, and location.</li>
+                            <li>Subject line: “Application – Role Name”.</li>
+                            <li>Email: <a href="mailto:crownforgebusiness@gmail.com" class="text-brand-accent">crownforgebusiness@gmail.com</a></li>
+                        </ol>
+                        <a href="mailto:crownforgebusiness@gmail.com?subject=Application%20-%20Your%20Role" class="mt-5 inline-block w-full text-center px-4 py-2 rounded bg-brand-accent text-brand-dark font-bold">Start Application</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black border-t border-slate-800 py-12">
+        <div class="container mx-auto px-6 text-center text-brand-muted">
+            <p class="mb-4">&copy; 2026 CrownForge Games. All rights reserved.</p>
+            <div class="flex items-center justify-center gap-6 text-sm">
+                <a href="Privacy-Policy.html" class="hover:text-white">Privacy Policy</a>
+                <a href="TermsofService.html" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../assets/js/main.js"></script>
+    <script type="module" src="../assets/js/careers.js"></script>
+</body>
+</html>
